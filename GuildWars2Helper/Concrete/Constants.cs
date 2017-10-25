@@ -11,7 +11,8 @@ namespace GuildWars2Helper.Concrete
     /// </Summer>
     public class Constants
     {
-        
+        public const string GUILD_WARS_EXE_PATH= @"C:\Program Files\Guild Wars 2\Gw2-64.exe";
+
         public const int MAX_API_ITEM_COUNT = 200;
 
         public const string apiKey = "64D31738-C039-5C45-BF33-2BAE0C23970F996CCFB4-2139-4E41-8BF7-4E83D1AF5B70";

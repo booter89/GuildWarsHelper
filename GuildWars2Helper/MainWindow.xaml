@@ -34,6 +34,10 @@
                     HorizontalAlignment="Left" VerticalAlignment="Top" 
                         Click="MousePosition_Click" Width="100"
                     Padding="0" Margin="0" BorderThickness="0" Height="20"/>
+                <Button x:Name="OpenGuildWars" Content="Guild Wars 2" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" 
+                        Click="OpenGuildWars_Click" Width="100"
+                    Padding="0" Margin="0" BorderThickness="0" Height="20"/>
             </WrapPanel>
 
         </Grid>

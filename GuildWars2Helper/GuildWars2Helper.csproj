@@ -75,6 +75,7 @@
     <Compile Include="UserInterface\StatusUserControl.xaml.cs">
       <DependentUpon>StatusUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\Application.cs" />
     <Compile Include="Utilities\GuildWars.cs" />
     <Compile Include="Utilities\Mouse.cs" />
     <Page Include="MainWindow.xaml">

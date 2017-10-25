@@ -51,9 +51,16 @@ namespace GuildWars2Helper.UserInterface
 
             worker.DoWork += (o, ea) =>
             {
+                Application.Current.Dispatcher.Invoke((Action)delegate {
 
-                Routines.Automation.Test();
-               
+                    //foreach (var process in Process.GetProcesses())
+                    //{
+                    //    this.ParentWindow.UpdateStatus(process.ProcessName);
+                    //}
+
+                    Routines.Automation.Test();
+                
+                });              
             };
 
             worker.ProgressChanged += (o, ea) =>

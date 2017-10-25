@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace GuildWars2Helper.Utilities
 {
     public class GuildWars
@@ -14,5 +15,7 @@ namespace GuildWars2Helper.Utilities
         public static extern int SetForegroundWindow(IntPtr point);
 
         //...
+
+        
     }
 }

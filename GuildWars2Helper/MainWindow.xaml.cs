@@ -250,5 +250,24 @@ namespace GuildWars2Helper
                 Grid.SetRow(accountOverviewTap, 0);
             }            
         }
+
+        private void OpenGuildWars_Click(object sender, RoutedEventArgs e)
+        {
+            bool isGuildWars2Running = false;
+
+            foreach (var process in System.Diagnostics.Process.GetProcesses())
+            {
+                if (process.ProcessName == "Gw2-64")
+                {
+                    isGuildWars2Running = true;
+                    break;
+                }
+            }
+
+            if ( !isGuildWars2Running)
+            {
+                Utilities.Application.OpenApplication(Concrete.Constants.GUILD_WARS_EXE_PATH);
+            }                
+        }
     }
 }
